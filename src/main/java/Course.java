@@ -11,4 +11,19 @@ public class Course {
         this.academicStartDate = academicStartDate;
         this.academicEndDate = academicEndDate;
     }
+
+    public String getCourseDetails(){
+        String returnString = "";
+
+        returnString += "**Course Name: " + this.name + "**\n\n";
+        returnString += "*Modules:*";
+
+        for (Module module:modules) {
+            returnString += "Module name: " + module.getName() + "\n";
+            returnString += "Student Info: " + module.getStudentInfo() + "\n";
+            returnString += "\n";
+        }
+
+        return returnString;
+    }
 }

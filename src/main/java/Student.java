@@ -19,4 +19,22 @@ public class Student {
     public String getUsername() {
         return name + Integer.toString(age);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public String getModules() {
+        String returnString = "";
+
+        for (String module:this.modules) {
+            returnString += module + " ";
+        }
+
+        return returnString;
+    }
 }

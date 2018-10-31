@@ -11,4 +11,22 @@ public class Module {
         this.students = students;
         this.courseIds = courseIds;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getStudentInfo() {
+        String returnString = "---\n";
+
+        for (Student student:this.students) {
+            returnString += "Student name: " + student.getName() + "\n";
+            returnString += "Student Username: " + student.getUsername() + "\n";
+            returnString += "Student Course: " + student.getCourse() + "\n";
+            returnString += "Student Modules: " + student.getModules() + "\n";
+            returnString += "---\n";
+        }
+
+        return returnString;
+    }
 }
