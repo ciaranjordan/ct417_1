@@ -16,11 +16,11 @@ public class Course {
         String returnString = "";
 
         returnString += "**Course Name: " + this.name + "**\n\n";
-        returnString += "*Modules:*";
+        returnString += "*Modules:*\n";
 
         for (Module module:modules) {
             returnString += "Module name: " + module.getName() + "\n";
-            returnString += "Student Info: " + module.getStudentInfo() + "\n";
+            returnString += "Student Info: \n" + module.getStudentInfo() + "\n";
             returnString += "\n";
         }
 
